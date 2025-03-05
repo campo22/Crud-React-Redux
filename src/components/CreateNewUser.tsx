@@ -16,7 +16,7 @@ export const CreateNewUser = () => {
 
         const name = formData.get('name') as string;
         const email = formData.get('email') as string;
-        const github = formData.get('github') as string; // Cambiado de 'gitHub' a 'github'
+        const github = formData.get('github') as string;
 
         if (!name || !email || !github) {
             return setResul('Error');

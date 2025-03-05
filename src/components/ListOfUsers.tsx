@@ -34,6 +34,7 @@ export default function ListOfUsers() {
                         </Title>
                     </div>
                     <button
+                        type="button"
                         onClick={() => setShowModal(true)}
                         className="px-4 py-2 font-bold text-white rounded-full bg-lime-300 hover:bg-lime-900"
                     >
@@ -63,7 +64,7 @@ export default function ListOfUsers() {
                             </TableCell>
                             <TableCell>{item.email}</TableCell>
                             <TableCell className="flex gap-2">
-                                <button>
+                                <button type="button">
 
                                     <EditIcon className="text-blue-500 size-6 hover:text-blue-700" />
                                 </button>
@@ -84,6 +85,7 @@ export default function ListOfUsers() {
                     <div className="p-4 bg-white rounded-lg">
                         <CreateNewUser />
                         <button
+                            type="button"
                             onClick={() => setShowModal(false)}
                             className="px-4 py-2 mt-4 font-bold text-white bg-red-500 rounded hover:bg-red-700"
                         >
